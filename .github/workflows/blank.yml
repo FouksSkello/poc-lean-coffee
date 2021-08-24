@@ -38,7 +38,7 @@ jobs:
 
   deploy:
     # The type of runner that the job will run on
-    environement: production
+    environment: production
     needs: build
     name: Deploy to prod
     runs-on: ubuntu-latest
