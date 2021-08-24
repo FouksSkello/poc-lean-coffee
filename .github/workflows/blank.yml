@@ -37,7 +37,7 @@ jobs:
           echo test, and deploy your project.
       - name: Notify slack pr open
         env: 
-          SLACK_WEBHOOK_URL : https://hooks.slack.com/services/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
+          SLACK_WEBHOOK_URL : https://hooks.slack.com/services/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
           PULL_REQUEST_NUMBER : ${{ github.event.pull_request.number }}
           PULL_REQUEST_TITLE : ${{ github.event.pull_request.title }}
           PULL_REQUEST_AUTHOR_NAME : ${{ github.event.pull_request.user.login }}
