@@ -38,10 +38,8 @@ jobs:
       - name: Slack Notification
         uses: rtCamp/action-slack-notify@master
         env:
-          SLACK_CHANNEL: aws-alert-ec2
-          SLACK_MESSAGE: 'Please review onx'
-          SLACK_TITLE: 'Pull request'
-          SLACK_USERNAME: 'list-inside'
+          SLACK_CHANNEL: poc-lean
+          SLACK_USERNAME: poc-lean
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
           
   build:
