@@ -42,7 +42,7 @@ jobs:
           SLACK_USERNAME: POC-LEAN
           SLACK_COLOR: good
           SLACK_ICON_EMOJI: ':bell:'
-          SLACK_TITLE: "Message - ${{ github.workflow }} - ${{ github.job }} - ${{ github.ref }}"
+          SLACK_TITLE: "Workflow : ${{ github.workflow }} - Job : ${{ github.job }} - Branche : ${{ github.ref }}"
           SLACK_MESSAGE: 'New feature to approve ticket :rocket:'
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
           
